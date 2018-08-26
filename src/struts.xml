@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- namespace="/"：/ 表示${pageContext.request.contextPath}/ -->
+	<package name="default" extends="struts-default" namespace="/">
+		<!-- 对应请求路径中的 hello.action -->
+		<action name="hello" class="com.darklovy.hello.helloaction">
+			<!-- 对应 HelloAction.java 中的 返回值 return "success"; -->
+			<result name="success">/hello/result.jsp</result>
+		</action>
+	</package>
+</struts>
