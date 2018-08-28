@@ -2,9 +2,7 @@ package com.darklovy.hello;
 
 import com.opensymphony.xwork2.Action;
 
-/*
- * 
- */
+
 public class helloaction implements Action{
 
 	@Override
